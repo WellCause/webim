@@ -11,18 +11,58 @@ html {
 body {
   font-family: 'Ubuntu', sans-serif;
   color: #74757b;
-  line-height: 1.5; }
+  line-height: 1.45;
+  font-size: 1.9rem; }
+
+.main > * {
+  display: grid;
+  grid-template-columns: [full-start] 3fr [main-start] 12.5fr [center-start] 15fr 2fr 15fr 2fr 15fr [center-end] 12.5fr [main-end] 3fr [full-end]; }
+
+.main > * > * {
+  grid-column: center-start / center-end; }
+
+.heading, .heading-1, .heading-2 {
+  color: #393e6b;
+  text-transform: uppercase;
+  letter-spacing: 1.2px; }
+
+.heading-1 {
+  font-size: 4.1rem; }
+
+.heading-2 {
+  font-size: 3.4rem;
+  letter-spacing: 1px; }
+
+.btn {
+  font-family: 'Ubuntu', sans-serif;
+  border: none;
+  padding: 2rem 0 1.8rem 0;
+  background-color: #2cd3b8;
+  border-radius: 10rem;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 1;
+  min-width: 29rem; }
+  .btn--transparent {
+    background-color: transparent;
+    border: 1px solid #393e6b;
+    color: #393e6b; }
 
 .header {
   display: grid;
-  grid-template-columns: [full-start] 1fr [main-start] 4fr [center-start] repeat(3, [col-start] 6fr [col-end]) [center-end] 4fr [main-end] 1fr [full-end];
+  grid-template-columns: [full-start] 3fr [main-start] 12.5fr [center-start] 15fr 2fr 15fr 2fr 15fr [center-end] 12.5fr [main-end] 3fr [full-end];
   align-items: center;
   box-shadow: 0 0 1rem;
-  padding: 2.5rem 0; }
+  position: relative;
+  padding: 3.7rem 0; }
   .header__signup {
     grid-column: main-start / span 1; }
+    .header__signup .header__list > :first-child {
+      margin-right: 4rem; }
   .header__nav {
-    grid-column: col-start 1 / main-end;
+    grid-column: center-start / main-end;
     justify-self: end;
     display: flex;
     align-items: center; }
@@ -30,12 +70,25 @@ body {
     list-style: none;
     display: flex; }
     .header__list > *:not(:last-child) {
-      margin-right: 2.5rem; }
+      margin-right: 2.4rem; }
   .header__link:link, .header__link:visited {
-    font-size: 1.5rem;
+    font-size: 2.2rem;
     text-decoration: none;
     color: #393e6b;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    letter-spacing: -1px; }
   .header__img {
-    margin-left: 2rem;
-    max-width: 15rem; }
+    transform: translateY(0.5rem);
+    margin-left: 3rem;
+    max-width: 13rem; }
+
+.setup-fast {
+  padding-top: 8rem;
+  margin-bottom: 7rem;
+  background-color: #eff4f4; }
+  .setup-fast .heading-1 {
+    margin-bottom: 3rem; }
+  .setup-fast__buttons {
+    margin: 6.3rem 0 8rem 0; }
+    .setup-fast__buttons > :first-child {
+      margin-right: 2.15rem; }

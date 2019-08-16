@@ -1,5 +1,16 @@
-body {
-    font-family: 'Ubuntu', sans-serif;
-    color: $color-primary;
-    line-height: 1.5;
+.heading {
+    color: $color-darkblue;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+}
+
+.heading-1 {
+    @extend .heading;
+    font-size: 4.1rem;
+}
+
+.heading-2 {
+    @extend .heading;
+    font-size: 3.4rem;
+    letter-spacing: 1px;
 }

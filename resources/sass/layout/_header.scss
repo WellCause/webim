@@ -3,14 +3,21 @@
     grid-template-columns: $grid-main;
     align-items: center;
     box-shadow: 0 0 1rem;
-    padding: 2.5rem 0;
+    position: relative;
+    padding: 3.7rem 0;
 
     &__signup {
         grid-column: main-start / span 1;
+
+        .header__list {
+            & > :first-child {
+                margin-right: 4rem;
+            }
+        }
     }
 
     &__nav {
-        grid-column: col-start 1 / main-end;
+        grid-column: center-start / main-end;
         justify-self: end;
         display: flex;
         align-items: center;
@@ -21,20 +28,22 @@
         display: flex;
 
         & > *:not(:last-child) {
-            margin-right: 2.5rem;
+            margin-right: 2.4rem;
         }
     }
 
     &__link:link,
     &__link:visited {
-        font-size: 1.5rem;
+        font-size: 2.2rem;
         text-decoration: none;
         color: $color-darkblue;
         text-transform: uppercase;
+        letter-spacing: -1px;
     }
 
     &__img {
-        margin-left: 2rem;
-        max-width: 15rem;
+        transform: translateY(.5rem);
+        margin-left: 3rem;
+        max-width: 13rem;
     }
 }

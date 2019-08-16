@@ -1,13 +1,16 @@
 // COLORS
-
 $color-primary: #74757b;
 $color-grey: #e1e2e9;
-$color-grey: #eff4f4;
+$color-grey-light: #eff4f4;
+$color-white: #fff;
+
 
 $color-darkblue: #393e6b;
 $color-darkblue-1: #3b4269;
 
 $color-emerald: #0da088;
+$color-indigo: #2cd3b8;
+
 
 // GRID SETUP
-$grid-main: [full-start] 1fr [main-start] 4fr [center-start] repeat(3, [col-start] 6fr [col-end]) [center-end] 4fr [main-end] 1fr [full-end];
+$grid-main: [full-start] 3fr [main-start] 12.5fr [center-start] 15fr 2fr 15fr 2fr 15fr [center-end] 12.5fr [main-end] 3fr [full-end];
