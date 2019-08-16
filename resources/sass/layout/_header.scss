@@ -1,0 +1,40 @@
+.header {
+    display: grid;
+    grid-template-columns: $grid-main;
+    align-items: center;
+    box-shadow: 0 0 1rem;
+    padding: 2.5rem 0;
+
+    &__signup {
+        grid-column: main-start / span 1;
+    }
+
+    &__nav {
+        grid-column: col-start 1 / main-end;
+        justify-self: end;
+        display: flex;
+        align-items: center;
+    }
+
+    &__list {
+        list-style: none;
+        display: flex;
+
+        & > *:not(:last-child) {
+            margin-right: 2.5rem;
+        }
+    }
+
+    &__link:link,
+    &__link:visited {
+        font-size: 1.5rem;
+        text-decoration: none;
+        color: $color-darkblue;
+        text-transform: uppercase;
+    }
+
+    &__img {
+        margin-left: 2rem;
+        max-width: 15rem;
+    }
+}

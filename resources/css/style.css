@@ -1,0 +1,41 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  font-family: 'Ubuntu', sans-serif;
+  color: #74757b;
+  line-height: 1.5; }
+
+.header {
+  display: grid;
+  grid-template-columns: [full-start] 1fr [main-start] 4fr [center-start] repeat(3, [col-start] 6fr [col-end]) [center-end] 4fr [main-end] 1fr [full-end];
+  align-items: center;
+  box-shadow: 0 0 1rem;
+  padding: 2.5rem 0; }
+  .header__signup {
+    grid-column: main-start / span 1; }
+  .header__nav {
+    grid-column: col-start 1 / main-end;
+    justify-self: end;
+    display: flex;
+    align-items: center; }
+  .header__list {
+    list-style: none;
+    display: flex; }
+    .header__list > *:not(:last-child) {
+      margin-right: 2.5rem; }
+  .header__link:link, .header__link:visited {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: #393e6b;
+    text-transform: uppercase; }
+  .header__img {
+    margin-left: 2rem;
+    max-width: 15rem; }
