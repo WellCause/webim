@@ -1,0 +1,15 @@
+{
+  "name": "webim",
+  "version": "1.0.0",
+  "description": "webim test layout",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "node-sass": "^4.12.0"
+  },
+  "scripts": {
+    "watch:sass": "node-sass resources/sass/main.scss resources/css/style.css -w"
+  },
+  "author": "Alexey Fedorov",
+  "license": "ISC"
+}
