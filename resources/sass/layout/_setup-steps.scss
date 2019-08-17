@@ -1,0 +1,52 @@
+.setup-steps {
+    padding: 7.4rem 0 8.1rem 0;
+    background-color: $color-grey-light;
+
+    .heading-2 {
+        margin-bottom: 2rem;
+    }
+
+    &__sub-text {
+        margin-bottom: 6.5rem;
+    }
+
+    &__list {
+        margin-bottom: 9rem;
+    }
+
+    &__step {
+        display: flex;
+        align-items: center;
+
+        &:not(:last-child) {
+            margin-bottom: 3.5rem;
+        }
+    }
+
+    &__icon {
+        max-width: 8.4rem;
+        max-height: 8.4rem;
+        margin-right: 4rem;
+        transform: translate(-3px, 4px)
+    }
+
+    &__text {
+        color: $color-darkblue;
+        letter-spacing: .9px;
+    }
+
+    &__buttons {
+
+        & > * {
+            min-width: 30.4rem;
+        }
+
+        & :first-child {
+            margin-right: 2rem;
+        }
+
+        & :last-child {
+            min-width: 31.4rem;
+        }
+    }
+}

@@ -18,4 +18,8 @@
         border: 1px solid $color-darkblue;
         color: $color-darkblue;
     }
+
+    &--darkblue {
+        background-color: $color-darkblue-1;
+    }
 }
