@@ -7,10 +7,13 @@ $color-white: #fff;
 
 $color-darkblue: #393e6b;
 $color-darkblue-1: #3b4269;
+$color-lightblue: #e1e2e9;
 
 $color-emerald: #0da088;
 $color-indigo: #2cd3b8;
 
+// FONTS
+$font-primary: 'Ubuntu', sans-serif;
 
 // GRID SETUP
 $grid-main: [full-start] 3fr [main-start] 12.5fr [center-start] 15fr 2fr 15fr 2fr 15fr [center-end] 12.5fr [main-end] 3fr [full-end];

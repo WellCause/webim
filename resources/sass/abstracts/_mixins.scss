@@ -1,0 +1,10 @@
+@mixin backgroundText {
+    position: absolute;
+    font-size: 17rem;
+    font-weight: 700;
+    color: $color-lightblue;
+    top: -7.2rem;
+    left: -6rem;
+    line-height: 1;
+    z-index: -1;
+}
