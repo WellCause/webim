@@ -15,9 +15,11 @@ body {
     color: $color-primary;
     line-height: 1.45;
     font-size: 1.9rem;
+    box-sizing: border-box;
+    letter-spacing: .1px;
 }
 
-// Assign display:grid to all direct children of MAIN and assign template to all these grids
+// Assign display:grid to all direct children of .main and assign template to all these grids
 .main {
 
     & > * {

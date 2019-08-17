@@ -1,0 +1,31 @@
+.setup-code {
+    background-color: $color-grey-light;
+    padding: 8.9rem 0 9.4rem 0;
+
+    &__list {
+        margin-top: 7.7rem;
+        list-style: none;
+
+        & > *:not(:last-child) {
+            margin-bottom: 5.2rem;
+        }
+    }
+
+    &__item {
+        margin-left: 4rem;
+        display: inline-block;
+        
+        &:last-child {
+            margin-top: 0.8rem;
+        }
+    }
+
+    &__link:link,
+    &__link:visited {
+        @include linkSetup;
+
+        &::before {
+            @include circle;
+        }
+    }
+}

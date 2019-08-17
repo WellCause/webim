@@ -1,13 +1,13 @@
 .setup-simple {
-    padding-bottom: 8.8rem;
+    padding: 7.6rem 0 10rem 0;
 
     .heading-2 {
-        margin-bottom: 1.7rem;
+        margin-bottom: 2.1rem;
     }
 
     &__steps {
         display: flex;
-        margin-top: 13.65rem;
+        margin-top: 13.8rem;
     }
 
     &__step {
@@ -25,6 +25,7 @@
         }
 
         &:last-child {
+
             &::before {
                 @include backgroundText;
                 content: '2';
@@ -40,11 +41,13 @@
         margin-bottom: 4.5rem;
     }
 
-    &__link {
+    &__link:link,
+    &__link:visited {
         color: $color-emerald;
         font-size: 2.1rem;
         text-decoration: none;
         border-bottom: 2px solid $color-emerald;
         line-height: 1;
+        letter-spacing: .2px;
     }
 }

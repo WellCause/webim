@@ -1,6 +1,6 @@
 .setup-fast {
-    padding-top: 8rem;
-    margin-bottom: 7rem;
+    padding: 8.1rem 0 7.7rem 0;
+    
     background-color: $color-grey-light;
 
     .heading-1 {
@@ -8,10 +8,10 @@
     }
 
     &__buttons {
-        margin: 6.3rem 0 8rem 0;
+        margin-top: 6.2rem;
 
         & > :first-child {
-            margin-right: 2.15rem;
+            margin-right: 2rem;
         }
     }
 }
