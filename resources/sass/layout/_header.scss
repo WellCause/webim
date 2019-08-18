@@ -78,7 +78,8 @@
             }
         }
 
-        .header__link:hover {
+        .header__link:hover
+        .header__link:focus {
             color: $color-white;
 
             @media only screen and (max-width: $bp-large) {
