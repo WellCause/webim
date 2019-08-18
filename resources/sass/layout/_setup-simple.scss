@@ -1,5 +1,5 @@
 .setup-simple {
-    padding: 7.6rem 0 10rem 0;
+    padding: 7.6rem 0 10.1rem 0;
 
     .heading-2 {
         margin-bottom: 2.1rem;
@@ -45,9 +45,8 @@
     &__link:visited {
         color: $color-emerald;
         font-size: 2.1rem;
-        text-decoration: none;
-        border-bottom: 2px solid $color-emerald;
         line-height: 1;
         letter-spacing: .2px;
+        text-decoration-skip-ink: none;
     }
 }

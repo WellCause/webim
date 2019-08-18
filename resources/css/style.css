@@ -18,7 +18,7 @@ body {
 
 .main > * {
   display: grid;
-  grid-template-columns: [full-start] 3fr [main-start] 12.5fr [center-start] 15fr 2fr 15fr 2fr 15fr [center-end] 12.5fr [main-end] 3fr [full-end]; }
+  grid-template-columns: [full-start] 3fr [main-start] 12.5fr [center-start] repeat(3, [col-start] 16.33fr [col-end]) [center-end] 12.5fr [main-end] 3fr [full-end]; }
 
 .main > * > * {
   grid-column: center-start / center-end; }
@@ -69,7 +69,7 @@ body {
 
 .header {
   display: grid;
-  grid-template-columns: [full-start] 3fr [main-start] 12.5fr [center-start] 15fr 2fr 15fr 2fr 15fr [center-end] 12.5fr [main-end] 3fr [full-end];
+  grid-template-columns: [full-start] 3fr [main-start] 12.5fr [center-start] repeat(3, [col-start] 16.33fr [col-end]) [center-end] 12.5fr [main-end] 3fr [full-end];
   align-items: center;
   box-shadow: 0 0 1rem;
   position: relative;
@@ -110,7 +110,7 @@ body {
       margin-right: 2rem; }
 
 .setup-simple {
-  padding: 7.6rem 0 10rem 0; }
+  padding: 7.6rem 0 10.1rem 0; }
   .setup-simple .heading-2 {
     margin-bottom: 2.1rem; }
   .setup-simple__steps {
@@ -151,19 +151,18 @@ body {
   .setup-simple__link:link, .setup-simple__link:visited {
     color: #0da088;
     font-size: 2.1rem;
-    text-decoration: none;
-    border-bottom: 2px solid #0da088;
     line-height: 1;
-    letter-spacing: .2px; }
+    letter-spacing: .2px;
+    text-decoration-skip-ink: none; }
 
 .setup-code {
   background-color: #eff4f4;
   padding: 8.9rem 0 9.4rem 0; }
   .setup-code__list {
-    margin-top: 7.7rem;
+    margin-top: 7.9rem;
     list-style: none; }
     .setup-code__list > *:not(:last-child) {
-      margin-bottom: 5.2rem; }
+      margin-bottom: 5.4rem; }
   .setup-code__item {
     margin-left: 4rem;
     display: inline-block; }
@@ -172,13 +171,12 @@ body {
   .setup-code__link:link, .setup-code__link:visited {
     display: inline-block;
     font-size: 2.8rem;
-    text-decoration: none;
     color: #0da088;
-    border-bottom: 2px solid #0da088;
     line-height: 1;
     letter-spacing: -.2px;
     margin-bottom: 1.7rem;
-    position: relative; }
+    position: relative;
+    text-decoration-skip-ink: none; }
     .setup-code__link:link::before, .setup-code__link:visited::before {
       content: '';
       position: absolute;
@@ -197,11 +195,11 @@ body {
     margin-top: 7.6rem;
     list-style: none; }
     .setup-dashboard__list > *:not(:last-child) {
-      margin-bottom: 5.7rem; }
+      margin-bottom: 6.05rem; }
     .setup-dashboard__list :nth-child(3) {
-      margin-bottom: 3.5rem; }
+      margin-bottom: 3.6rem; }
     .setup-dashboard__list :nth-child(4) {
-      margin-bottom: 4.1rem; }
+      margin-bottom: 4.4rem; }
   .setup-dashboard__item {
     margin-left: 4rem;
     display: inline-block; }
@@ -210,13 +208,12 @@ body {
   .setup-dashboard__link:link, .setup-dashboard__link:visited {
     display: inline-block;
     font-size: 2.8rem;
-    text-decoration: none;
     color: #0da088;
-    border-bottom: 2px solid #0da088;
     line-height: 1;
     letter-spacing: -.2px;
     margin-bottom: 1.7rem;
-    position: relative; }
+    position: relative;
+    text-decoration-skip-ink: none; }
     .setup-dashboard__link:link::before, .setup-dashboard__link:visited::before {
       content: '';
       position: absolute;
@@ -255,3 +252,39 @@ body {
     margin-right: 2rem; }
   .setup-steps__buttons :last-child {
     min-width: 31.4rem; }
+
+.communication {
+  padding: 7rem 0; }
+  .communication__text {
+    letter-spacing: .4px;
+    color: #393e6b;
+    font-size: 2rem;
+    line-height: 1.4;
+    margin-bottom: 7.6rem;
+    transform: translateX(-4px); }
+  .communication__list {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(32.5rem, 1fr));
+    grid-column-gap: 5.1rem;
+    grid-row-gap: 4.9rem; }
+  .communication__icon {
+    max-width: 4.6rem;
+    max-height: 4.6rem;
+    margin-left: .2rem;
+    fill: #fff; }
+  .communication__item {
+    display: flex;
+    align-items: center; }
+    .communication__item:nth-child(3) > .communication__link {
+      transform: translateY(1.2rem); }
+    .communication__item:nth-child(5) > .communication__icon {
+      fill: url(#yad-gradient); }
+  .communication__link:link, .communication__link:visited {
+    display: inline-block;
+    margin-left: 3.2rem;
+    color: #0da088;
+    font-size: 2.05rem;
+    line-height: 1;
+    text-decoration-skip-ink: none;
+    line-height: 1.3; }

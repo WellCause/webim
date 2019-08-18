@@ -16,4 +16,4 @@ $color-indigo: #2cd3b8;
 $font-primary: 'Ubuntu', sans-serif;
 
 // GRID SETUP
-$grid-main: [full-start] 3fr [main-start] 12.5fr [center-start] 15fr 2fr 15fr 2fr 15fr [center-end] 12.5fr [main-end] 3fr [full-end];
+$grid-main: [full-start] 3fr [main-start] 12.5fr [center-start] repeat(3, [col-start] 16.33fr [col-end]) [center-end] 12.5fr [main-end] 3fr [full-end];
