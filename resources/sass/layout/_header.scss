@@ -1,34 +1,55 @@
 .header {
     display: grid;
-    grid-template-columns: $grid-main;
+    grid-template-columns: $grid-desktop;
     align-items: center;
     box-shadow: 0 0 1rem;
     position: relative;
     padding: 3.7rem 0;
+    background-image: url(../img/header_bg.png);
+    background-repeat: no-repeat;
+    background-size: contain;
 
-    &__signup {
-        grid-column: main-start / span 1;
+    @media only screen and (max-width: $bp-large) {
+        background-image: none;
+    }
 
-        .header__list {
-            & > :first-child {
-                margin-right: 4rem;
-            }
+    @media only screen and (max-width: $bp-medium) {
+        grid-template-columns: $grid-mobile;
+        padding: 5.6rem 0;
+    }
+
+    &__img {
+        transform: translateY(.5rem);
+        margin-left: 3rem;
+        max-width: 13rem;
+
+        @media only screen and (max-width: $bp-large) {
+            max-width: 14rem;
+            transform: translateY(-2rem);
         }
     }
 
-    &__nav {
-        grid-column: center-start / main-end;
-        justify-self: end;
-        display: flex;
-        align-items: center;
-    }
+    &__mobile-logo {
+        display: none;
 
-    &__list {
-        list-style: none;
-        display: flex;
+        @media only screen and (max-width: $bp-medium) {
+            display: block;
+            grid-column: center-start / center-end;
+            justify-self: center;
+        }
 
-        & > *:not(:last-child) {
-            margin-right: 2.4rem;
+        .header__img {
+
+            @media only screen and (max-width: $bp-medium) {
+                display: block;
+                max-width: 23rem;
+                transform: translateY(.6rem);
+                margin: 0;
+            }
+
+            @media only screen and (max-width: $bp-smallest ) {
+                max-width: 15rem;
+            }
         }
     }
 
@@ -48,9 +69,108 @@
         }
     }
 
-    &__img {
-        transform: translateY(.5rem);
-        margin-left: 3rem;
-        max-width: 13rem;
+    &__signup {
+        grid-column: main-start / span 1;
+
+        .header__list {
+            &> :first-child {
+                margin-right: 4rem;
+            }
+        }
+
+        .header__link:hover {
+            color: $color-white;
+
+            @media only screen and (max-width: $bp-large) {
+                color: $color-cyan;
+            }
+        }
+
+        @media only screen and (max-width: $bp-large) {
+            grid-column: main-start / main-end;
+            justify-self: center;
+            transform: translateX(-8rem);
+        }
+
+        @media only screen and (max-width: $bp-medium) {
+            display: none;
+        }
+    }
+
+    &__nav {
+        grid-column: center-start / main-end;
+        justify-self: end;
+        display: flex;
+        align-items: center;
+
+        @media only screen and (max-width: $bp-large) {
+            grid-column: main-start / main-end;
+            justify-self: center;
+        }
+
+        @media only screen and (max-width: $bp-medium) {
+            display: none;
+        }
+    }
+
+    &__list {
+        list-style: none;
+        display: flex;
+
+        &>*:not(:last-child) {
+            margin-right: 2.4rem;
+        }
+    }
+
+    &__nav-btn {
+        display: none;
+        position: absolute;
+        cursor: pointer;
+        height: 4.5rem;
+        width: 5.7rem;
+        left: 6.8rem;
+        bottom: 5rem;
+
+        @media only screen and (max-width: $bp-medium) {
+            display: block;
+        }
+
+        @media only screen and (max-width: $bp-smallest ) {
+            left: 3rem;
+        }
+    }
+
+    .header__line {
+        display: none;
+        position: absolute;
+        top: 2rem;
+        width: 5.7rem;
+        height: .5rem;
+        background-color: $color-cyan;
+        cursor: pointer;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 1.9rem;
+            left: 0;
+            width: 5.7rem;
+            height: .5rem;
+            background-color: $color-cyan;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: -1.9rem;
+            left: 0;
+            width: 5.7rem;
+            height: .5rem;
+            background-color: $color-cyan;
+        }
+
+        @media only screen and (max-width: $bp-medium) {
+            display: block;
+        }
     }
 }

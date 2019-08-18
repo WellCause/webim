@@ -14,9 +14,27 @@ $color-lightblue-1: #adb0c2;
 $color-emerald: #0da088;
 $color-indigo: #2cd3b8;
 $color-cyan: #68cdbc;
+$color-teal: #06d6d6;
+$color-emerald-1: #3fd6bc;
+
+$color-vk: #45668e;
+$color-twitter: #1da1f2;
+$color-skype: #00aff0;
+$color-facebook: #3b5998;
+
+$color-grad-start: #4c9db3;
+$color-grad-end: #33e2cf;
 
 // FONTS
 $font-primary: 'Ubuntu', sans-serif;
 
 // GRID SETUP
-$grid-main: [full-start] 3fr [main-start] 12.5fr [center-start] repeat(3, [col-start] 16.33fr [col-end]) [center-end] 12.5fr [main-end] 3fr [full-end];
+$grid-desktop: [full-start] 3fr [main-start] 12.5fr [center-start] repeat(3, [col-start] 16.33fr [col-end]) [center-end] 12.5fr [main-end] 3fr [full-end];
+$grid-mobile: [full-start] 1fr [center-start] repeat(2, 4.6fr) [center-end] 1fr [full-end];
+
+// BREAKPOINTS
+$bp-largest: 81em;
+$bp-large: 67.625em;
+$bp-medium: 46.875em;
+$bp-small: 34.375em;
+$bp-smallest: 25.625em;

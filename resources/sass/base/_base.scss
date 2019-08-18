@@ -8,6 +8,10 @@
 
 html {
     font-size: 62.5%; // 1rem = 10px
+
+    @media only screen and (max-width: $bp-small) {
+        font-size: 50%;
+    }
 }
 
 body {
@@ -17,6 +21,18 @@ body {
     font-size: 1.9rem;
     box-sizing: border-box;
     letter-spacing: .1px;
+
+    @media only screen and (max-width: $bp-largest) {
+        br {
+            display: none; //remove line breaks
+        }
+    }
+
+    .chat-btn {
+        @media only screen and (max-width: $bp-medium) {
+            display: none;
+        }
+    }
 }
 
 // Assign display:grid to all direct children of .main and assign template to all these grids
@@ -24,10 +40,22 @@ body {
 
     & > * {
         display: grid;
-        grid-template-columns: $grid-main;
+        grid-template-columns: $grid-desktop;
+
+        @media only screen and (max-width: $bp-medium) {
+            grid-template-columns: $grid-mobile;
+        }
     }
 
     & > * > * {
         grid-column: center-start / center-end;
+
+        @media only screen and (max-width: $bp-large) {
+            grid-column: main-start / main-end;
+        }
+
+        @media only screen and (max-width: $bp-medium) {
+            grid-column: center-start / center-end;
+        }
     }
 }

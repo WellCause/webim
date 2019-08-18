@@ -8,6 +8,9 @@
 
     &__sub-text {
         margin-bottom: 6.5rem;
+        @media only screen and (max-width: $bp-medium) {
+            font-size: 2.4rem;
+        }
     }
 
     &__list {
@@ -21,15 +24,27 @@
         &:not(:last-child) {
             margin-bottom: 3.5rem;
         }
+        @media only screen and (max-width: $bp-medium) {
+            font-size: 2.2rem;
+        }
     }
 
     &__icon {
+        min-width: 8.4rem;
+        min-height: 8.4rem;
         max-width: 8.4rem;
         max-height: 8.4rem;
         margin-right: 4rem;
         transform: translate(-3px, 4px);
         order: -1;
         transition: transform .2s;
+
+        @media only screen and (max-width: $bp-medium) {
+            min-width: 10rem;
+            min-height: 10rem;
+            max-width: 10rem;
+            max-height: 10rem;
+        }
     }
 
     &__text {
@@ -43,16 +58,34 @@
 
     &__buttons {
 
+        @media only screen and (max-width: $bp-medium) {
+            display: flex;
+            flex-direction: column;
+        }
+
         & > * {
             min-width: 30.4rem;
+
         }
 
         & :first-child {
             margin-right: 2rem;
+
+            @media only screen and (max-width: $bp-medium) {
+                margin: 2.4rem 0 2.9rem 0;
+            }
         }
 
         & :last-child {
             min-width: 31.4rem;
+        }
+
+        & > * {
+            
+            @media only screen and (max-width: $bp-medium) {
+                font-size: 2.7rem;
+                padding: 3rem 3rem;
+            }
         }
     }
 }

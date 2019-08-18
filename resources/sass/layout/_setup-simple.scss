@@ -1,13 +1,31 @@
 .setup-simple {
     padding: 7.6rem 0 10.1rem 0;
 
+    @media only screen and (max-width: $bp-medium) {
+        padding: 8.9rem 0 10.1rem 0;
+    }
+
     .heading-2 {
         margin-bottom: 2.1rem;
+
+        @media only screen and (max-width: $bp-medium) {
+            margin-bottom: 5rem;
+        }
     }
 
     &__steps {
         display: flex;
         margin-top: 13.8rem;
+
+        @media only screen and (max-width: $bp-large) {
+            margin-left: 5rem;
+            margin-top: 9.8rem;
+        }
+
+        @media only screen and (max-width: $bp-small) {
+            margin-left: 2rem;
+            margin-top: 9.8rem;
+        }
     }
 
     &__step {
@@ -21,6 +39,10 @@
             &::before {
                 @include backgroundText;
                 content: '1';
+            }
+
+            @media only screen and (max-width: $bp-small) {
+                margin-right: 6.5rem;
             }
         }
 
@@ -40,6 +62,12 @@
         fill: $color-darkblue;
         margin-bottom: 4.5rem;
         order: -1;
+
+        @media only screen and (max-width: $bp-medium) {
+            max-width: 7rem;
+            max-height: 7rem;
+            margin-bottom: 4.5rem;
+        }
     }
 
     &__link:link,
@@ -57,9 +85,25 @@
             color: $color-indigo;
         }
 
-        &:hover + .setup-simple__icon,
-        &:focus + .setup-simple__icon {
+        &:hover+.setup-simple__icon,
+        &:focus+.setup-simple__icon {
             animation: jump .7s infinite;
+        }
+
+        @media only screen and (max-width: $bp-medium) {
+            max-width: 82%;
+            font-size: 2.5rem;
+        }
+
+        @media only screen and (max-width: $bp-small) {
+            font-size: 2rem;
+        }
+    }
+
+    &__text {
+        @media only screen and (max-width: $bp-medium) {
+            font-size: 2.6rem;
+            max-width: 80%;
         }
     }
 }

@@ -7,6 +7,10 @@
 .heading-1 {
     @extend .heading;
     font-size: 4.1rem;
+
+    @media only screen and (max-width: $bp-medium) {
+        font-size: 5rem;
+    }
 }
 
 .heading-2 {
@@ -14,4 +18,16 @@
     font-size: 3.4rem;
     letter-spacing: 1px;
     line-height: 1.25;
+
+    @media only screen and (max-width: $bp-medium) {
+        font-size: 5rem;
+        max-width: 79%;
+        line-height: 1;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+        font-size: 3rem;
+        max-width: 79%;
+        line-height: 1;
+    }
 }

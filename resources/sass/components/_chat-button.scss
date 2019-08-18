@@ -1,0 +1,29 @@
+.chat-btn {
+    border-radius: 50%;
+    background-color: $color-teal;
+    height: 5.5rem;
+    width: 5.5rem;
+    padding: 2rem;
+    position: fixed;
+    right: 3.2rem;
+    bottom: 1rem;
+    transition: transform .2s;
+    cursor: pointer;
+    box-shadow: 1px 1px 4px 1px rgba($color-primary, .5);
+
+    &:hover {
+        transform: scale(1.1);
+    }
+
+    &:active {
+        transform: scale(.9);
+    }
+
+    &__img {
+        position: absolute;
+        top: 1.2rem;
+        left: 1rem;
+        max-width: 3.5rem;
+        max-height: 3.5rem;
+    }
+}

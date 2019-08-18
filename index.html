@@ -13,6 +13,9 @@
 
 <body>
     <header class="header">
+        <a href="#" class="header__nav-btn">
+            <span class="header__line"></span>
+        </a>
         <div class="header__signup">
             <ul class="header__list">
                 <li class="header__item"><a class="header__link" href="#">Вход</a></li>
@@ -30,6 +33,9 @@
                 <img class="header__img" src="resources/img/logo_header.png" alt="Webim logo">
             </a>
         </nav>
+        <a class="header__mobile-logo" href="#">
+            <img class="header__img" src="resources/img/logo_header.png" alt="Webim logo">
+        </a>
     </header>
 
     <main class="main">
@@ -239,6 +245,10 @@
     </main>
 
     <footer class="footer">
+        <div class="footer__mobile-copy">
+            <p>&copy; Webim 2008-2017</p>
+            <p>Все права защищены</p>
+        </div>
         <div class="footer__logo">
             <a href="#" class="footer__link">
                 <img class="footer__img" src="resources/img/logo_footer.png" alt="Webim logo">
@@ -248,10 +258,10 @@
         </div>
         <div class="footer__contacts">
             <div class="footer__main-phone">
+                <a href="tel:+78005004932" class="footer__link footer__text footer__text--big">+7 (800) 500-49-32</a>
                 <svg class="footer__icon">
                     <use xlink:href='resources/img/sprite.svg#phone'></use>
                 </svg>
-                <a href="tel:+78005004932" class="footer__link footer__text footer__text--big">+7 (800) 500-49-32</a>
             </div>
             <div class="footer__sub-phone">
                 <a href="tel:+74993223754" class="footer__link footer__text footer__text--medium">+7 (499) 322-37-54</a>
@@ -286,6 +296,12 @@
             </div>
         </div>
     </footer>
+
+    <div class="chat-btn">
+        <svg class="chat-btn__img">
+            <use xlink:href='resources/img/sprite.svg#message'></use>
+        </svg>
+    </div>
 
     <svg style="width:0; height:0; position:absolute;" aria-hidden="true" focusable="false">
         <linearGradient id="yad-gradient" gradientUnits="userSpaceOnUse" x1="-87.086" y1="140" x2="-86.919" y2="140"

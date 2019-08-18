@@ -7,35 +7,52 @@
         font-size: 2rem;
         line-height: 1.4;
         margin-bottom: 7.6rem;
-        transform: translateX(-4px)
+        transform: translateX(-4px);
+
+        @media only screen and (max-width: $bp-medium) {
+            font-size: 2.5rem;
+        }
     }
 
     &__list {
         list-style: none;
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(32.5rem, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(31.5rem, 1fr));
         grid-column-gap: 5.1rem;
         grid-row-gap: 4.9rem;
     }
 
     &__icon {
+        min-width: 4.6rem;
+        min-height: 4.6rem;
         max-width: 4.6rem;
         max-height: 4.6rem;
         margin-left: .2rem;
         fill: $color-white;
         order: -1;
         transition: transform .2s ease-out;
+
+        @media only screen and (max-width: $bp-medium) {
+            min-width: 7rem;
+            min-height: 7rem;
+            max-width: 7rem;
+            max-height: 7rem;
+        }
     }
 
     &__item {
         display: flex;
         align-items: center;
 
-        &:nth-child(3) > .communication__link {
+        &:nth-child(3)>.communication__link {
             transform: translateY(1.2rem);
+
+            @media only screen and (max-width: $bp-medium) {
+                transform: translateY(0);
+            }
         }
 
-        &:nth-child(5) > .communication__icon {
+        &:nth-child(5)>.communication__icon {
             fill: url(#yad-gradient)
         }
     }
@@ -57,12 +74,13 @@
             color: $color-indigo;
         }
 
-        &:hover + .communication__icon,
-        &:focus + .communication__icon {
+        &:hover+.communication__icon,
+        &:focus+.communication__icon {
             transform: scale(1.2);
         }
+
+        @media only screen and (max-width: $bp-medium) {
+            font-size: 2.2rem;
+        }
     }
-
-    
-
 }

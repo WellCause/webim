@@ -7,6 +7,11 @@
     left: -6rem;
     line-height: 1;
     z-index: -1;
+
+    @media only screen and (max-width: $bp-medium) {
+        font-size: 15rem;
+        top: -3.5rem;
+    }
 }
 
 @mixin linkSetup {
