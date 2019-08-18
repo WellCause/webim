@@ -146,7 +146,7 @@
         top: 2rem;
         width: 5.7rem;
         height: .5rem;
-        background-color: $color-cyan;
+        background-color: $color-emerald-1;
         cursor: pointer;
 
         &::before {
@@ -156,7 +156,7 @@
             left: 0;
             width: 5.7rem;
             height: .5rem;
-            background-color: $color-cyan;
+            background-color: $color-emerald-1;
         }
 
         &::after {
@@ -166,7 +166,7 @@
             left: 0;
             width: 5.7rem;
             height: .5rem;
-            background-color: $color-cyan;
+            background-color: $color-emerald-1;
         }
 
         @media only screen and (max-width: $bp-medium) {
