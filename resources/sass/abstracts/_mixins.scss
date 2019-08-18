@@ -18,6 +18,13 @@
     margin-bottom: 1.7rem;
     position: relative;
     text-decoration-skip-ink: none;
+    transition: color .2s ease-out;
+
+    &:hover,
+    &:focus {
+        outline: none;
+        color: $color-indigo;
+    }
 }
 
 @mixin circle {

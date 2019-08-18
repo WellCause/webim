@@ -12,14 +12,34 @@
     min-width: 29.2rem;
     cursor: pointer;
     letter-spacing: .2px;
+    transition: transform .2s, box-shadow .2s, color .2s, background-color .2s;
 
     &--transparent {
         background-color: transparent;
         border: 1px solid $color-darkblue;
         color: $color-darkblue;
+
+        &:hover {
+            transform: translateY(-2px);
+            color: $color-white;
+            background-color: $color-darkblue;
+        }
     }
 
     &--darkblue {
         background-color: $color-darkblue-1;
     }
+
+    &:hover,
+    &:focus {
+        outline: none;
+        transform: translateY(-2px);
+        box-shadow: 0 2px 4px rgba($color-primary, .3);
+    }
+
+    &:active {
+        transform: translateY(1px);
+        outline: none;
+    }
+
 }

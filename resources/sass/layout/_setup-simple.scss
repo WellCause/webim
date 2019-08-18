@@ -39,6 +39,7 @@
         max-height: 5.8rem;
         fill: $color-darkblue;
         margin-bottom: 4.5rem;
+        order: -1;
     }
 
     &__link:link,
@@ -48,5 +49,17 @@
         line-height: 1;
         letter-spacing: .2px;
         text-decoration-skip-ink: none;
+        transition: color .2s ease-out;
+
+        &:hover,
+        &:focus {
+            outline: none;
+            color: $color-indigo;
+        }
+
+        &:hover + .setup-simple__icon,
+        &:focus + .setup-simple__icon {
+            animation: jump .7s infinite;
+        }
     }
 }
