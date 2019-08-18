@@ -1,0 +1,114 @@
+.footer {
+    background-color: $color-darkblue;
+    display: grid;
+    grid-template-columns: $grid-main;
+    padding: 6.3rem 0 7rem;
+    color: $color-white;
+
+    & > * {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__logo {
+        grid-column: main-start / span 1;
+    }
+
+    &__img {
+        max-width: 17rem;
+        margin-bottom: 2.4rem;
+    }
+
+    &__text {
+        font-size: 1.6rem;
+        line-height: 1.25;
+        letter-spacing: .2px;
+
+        &--transparent {
+            color: rgba($color-white, .6)
+        }
+
+        &--big {
+            font-size: 3rem;
+            letter-spacing: -.7px;
+        }
+
+        &--medium {
+            display: inline-block;
+            font-size: 2.3rem;
+            margin-bottom: .4rem;
+        }
+
+        &--small {
+            font-size: 1.9rem;
+            letter-spacing: -.1px;
+        }
+
+        &--email {
+            display: inline-block;
+            font-size: 1.85rem;
+
+            &:first-child {
+                margin-bottom: .5rem;
+            }
+
+            &:nth-child(2) {
+                margin-bottom: 1.1rem;
+            }
+        }
+    }
+
+    &__contacts {
+        grid-column: center-start / span 2;
+        margin-left: 9.3rem;
+
+        & > :last-child {
+            margin-top: 2.5rem;
+        }
+    }
+
+    &__main-phone {
+        display: flex;
+        align-items: center;
+        margin-top: .2rem;
+        margin-bottom: 1.8rem;
+    }
+
+    &__icon {
+        fill: $color-cyan;
+        max-width: 3.3rem;
+        max-height: 3.3rem;
+        margin-right: 1.4rem;
+    }
+
+    &__sub-phone {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__e-contacts {
+        grid-column: col-start 3 / main-end;
+        justify-self: end;
+        margin-right: 4rem;
+    }
+
+    &__socials {
+        margin-top: 1.1rem;
+    }
+
+    &__social {
+        fill: $color-lightblue-1;
+        max-width: 2.3rem;
+        max-height: 2.3rem;
+
+        &:first-child {
+            transform: translateY(.3rem);
+            max-width: 3rem;
+            max-height: 3rem;
+        }
+
+        &:not(:last-child) {
+            margin-right: 1.7rem;
+        }
+    }
+}

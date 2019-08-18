@@ -254,7 +254,7 @@ body {
     min-width: 31.4rem; }
 
 .communication {
-  padding: 7rem 0; }
+  padding: 7rem 0 8.8rem 0; }
   .communication__text {
     letter-spacing: .4px;
     color: #393e6b;
@@ -288,3 +288,75 @@ body {
     line-height: 1;
     text-decoration-skip-ink: none;
     line-height: 1.3; }
+
+.footer {
+  background-color: #393e6b;
+  display: grid;
+  grid-template-columns: [full-start] 3fr [main-start] 12.5fr [center-start] repeat(3, [col-start] 16.33fr [col-end]) [center-end] 12.5fr [main-end] 3fr [full-end];
+  padding: 6.3rem 0 7rem;
+  color: #fff; }
+  .footer > * {
+    display: flex;
+    flex-direction: column; }
+  .footer__logo {
+    grid-column: main-start / span 1; }
+  .footer__img {
+    max-width: 17rem;
+    margin-bottom: 2.4rem; }
+  .footer__text {
+    font-size: 1.6rem;
+    line-height: 1.25;
+    letter-spacing: .2px; }
+    .footer__text--transparent {
+      color: rgba(255, 255, 255, 0.6); }
+    .footer__text--big {
+      font-size: 3rem;
+      letter-spacing: -.7px; }
+    .footer__text--medium {
+      display: inline-block;
+      font-size: 2.3rem;
+      margin-bottom: .4rem; }
+    .footer__text--small {
+      font-size: 1.9rem;
+      letter-spacing: -.1px; }
+    .footer__text--email {
+      display: inline-block;
+      font-size: 1.85rem; }
+      .footer__text--email:first-child {
+        margin-bottom: .5rem; }
+      .footer__text--email:nth-child(2) {
+        margin-bottom: 1.1rem; }
+  .footer__contacts {
+    grid-column: center-start / span 2;
+    margin-left: 9.3rem; }
+    .footer__contacts > :last-child {
+      margin-top: 2.5rem; }
+  .footer__main-phone {
+    display: flex;
+    align-items: center;
+    margin-top: .2rem;
+    margin-bottom: 1.8rem; }
+  .footer__icon {
+    fill: #68cdbc;
+    max-width: 3.3rem;
+    max-height: 3.3rem;
+    margin-right: 1.4rem; }
+  .footer__sub-phone {
+    display: flex;
+    flex-direction: column; }
+  .footer__e-contacts {
+    grid-column: col-start 3 / main-end;
+    justify-self: end;
+    margin-right: 4rem; }
+  .footer__socials {
+    margin-top: 1.1rem; }
+  .footer__social {
+    fill: #adb0c2;
+    max-width: 2.3rem;
+    max-height: 2.3rem; }
+    .footer__social:first-child {
+      transform: translateY(0.3rem);
+      max-width: 3rem;
+      max-height: 3rem; }
+    .footer__social:not(:last-child) {
+      margin-right: 1.7rem; }
